@@ -1,0 +1,117 @@
+.hh {
+  z-index: 1;
+}
+
+.wie {
+  transition: 2s linear;
+}
+
+.modalBackground {
+    z-index: 1000;
+  animation: bounce;
+  animation-duration: 2s;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(200, 200, 200, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 2s linear;
+}
+
+.modalContainer {
+    z-index: 1000;
+  width: 500px;
+  height: 500px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.modalContainer .title {
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.modalContainer .body {
+  position: relative;
+  left: -15px;
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.asking {
+  flex-direction: column;
+}
+
+.asking > input {
+  font-size: 18px;
+  position: relative;
+  left: -50px;
+  width: 150%;
+  border: 1px solid rgba(89, 0, 255, 0.392);
+  border-radius: 25px;
+  padding: 10px;
+  height: 40px;
+  margin-bottom: 40px;
+  display: block;
+}
+
+.asking > input:focus {
+  border-radius: 25px;
+  border: 1px solid rgba(89, 0, 255, 0.392);
+  box-shadow: rgba(89, 0, 255, 0.392) 0px 0px 30px;
+}
+
+.asking > button {
+  width: 250px;
+  height: 45px;
+  margin: 10px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.about {
+  text-align: left;
+  width: 150%;
+  position: relative;
+  left: -50px;
+  bottom: 5px;
+}
+
+.wqd {
+  width: 100%;
+}
+
+.efwf {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
