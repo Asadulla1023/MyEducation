@@ -1,45 +1,105 @@
 .homePage {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    gap: 20px;
-    height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  height: 100%;
+}
+
+.educCard {
+    transition: 0.1s linear;
+  padding: 10px 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background: rgb(114, 255, 229);
+  border-radius: 15px;
 }
 
 .meaningOfHead {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logoOfEducation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 87%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 92%;
+}
+
+.homeCenter {
+    margin-top: 30px;
+}
+
+.logoOfEducation > h2 {
+  text-align: right;
+  font-size: 26px;
+  font-weight: 900;
+  color: #fff;
 }
 
 .logoOfEducation > p {
-    font-size: 22px;
-    font-weight: 700;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.educCard {
+  margin-bottom: 55px;
+}
+
+.educCard:hover {
+  box-shadow:
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .Ba {
-    width: 150px;
-    border: 0 solid #000;
-    border-radius: 50%;
+  width: 150px;
+  border: 0 solid #000;
+  border-radius: 50%;
 }
 
 .aboutSectOfHome {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutSection {
-    text-align: center;
-    width: 80%;
-    font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  text-align: left;
+  width: 90%;
+  font-size: 16px;
+}
+
+.selectYourC > button {
+  width: 150px;
+  height: 40px;
+  margin: 10px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  top: 0px;
+  left: 25px;
+}
+
+.aboutSection > a {
+  color: rgb(89, 0, 255);
+}
+
+.aboutSection > a:hover {
+  color: #000;
 }

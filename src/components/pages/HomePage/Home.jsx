@@ -4,20 +4,46 @@ import styles from './Home.module.css'
 
 import Ba from './Ba.jfif'
 
+import { EDUC } from '../../../Constants/Educs'
+
+import { Link } from 'react-router-dom'
+
 const Home = () => {
   return (
     <div className={styles.homePage}>
       <div className={styles.homeCenter}>
-        <div className={styles.meaningOfHead}>
-          <div className={styles.logoOfEducation}>
-            <img src={Ba} alt={Ba} className={styles.Ba} />
-            <p>——</p>
-            <h2>Bobir Akilkhanov tech academy</h2>
+        <div className={styles.educCard}>
+          <div className={styles.meaningOfHead}>
+            <div className={styles.logoOfEducation}>
+              <img src={Ba} alt={Ba} className={styles.Ba} />
+              <h2>Bobir Akilkhanov tech academy</h2>
+            </div>
+          </div>
+          <div className={styles.aboutSectOfHome}>
+            <p className={styles.aboutSection}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptas rerum maxime ducimus unde. Ad accusantium ratione eius tempore, blanditiis est amet odio reiciendis eos praesentium quidem? Quibusdam, deleniti molestiae a quos saepe minus suscipit quaerat quidem in pariatur libero nam modi quo ea ipsam, repudiandae vel debitis delectus totam!
+              <Link to="/about" target="_blank"> More about</Link></p>
+          </div>
+          <div className={styles.selectYourC}>
+            <button type='button'>Join Course</button>
           </div>
         </div>
-        <div className={styles.aboutSectOfHome}>
-          <p className={styles.aboutSection}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit itaque laudantium ipsa. Molestias laborum possimus laudantium aliquam iusto magnam distinctio tenetur voluptas libero cupiditate quisquam id recusandae magni iste vero quae natus dolore, suscipit minima amet quia. Corrupti, et dignissimos. Assumenda obcaecati ratione necessitatibus, qui cupiditate ad nulla, culpa eligendi quo molestias soluta modi commodi explicabo amet delectus mollitia recusandae tempore saepe distinctio tenetur eveniet aliquid. Quas facere iusto minima quod reiciendis, debitis deleniti sunt inventore magni possimus, quaerat deserunt modi quos quisquam unde perferendis reprehenderit? Necessitatibus delectus neque aspernatur quas dolores? Sunt veritatis repellat ullam magnam quasi fugiat eos.</p>
-        </div>
+        {EDUC.map(({ img, title, about, id }) => (
+          <div className={styles.educCard} key={id}>
+            <div className={styles.meaningOfHead}>
+              <div className={styles.logoOfEducation}>
+                <img src={img} alt={Ba} className={styles.Ba} />
+                <h2>{title}</h2>
+              </div>
+            </div>
+            <div className={styles.aboutSectOfHome}>
+              <p className={styles.aboutSection}>{about}
+                <Link to="/about" target="_blank"> More about</Link></p>
+            </div>
+            <div className={styles.selectYourC}>
+              <button type='button'>Join Course</button>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   )
