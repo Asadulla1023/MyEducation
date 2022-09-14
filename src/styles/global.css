@@ -22,6 +22,8 @@ body {
 .routers {
   position: relative;
   top: 20px;
+  display: flex;
+  gap: 20px;
   left: 0;
 }
 
@@ -46,8 +48,30 @@ body {
 }
 
 .account {
+  z-index: 1;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.leftSide {
+  position: relative;
+  top: 30px;
+  width: 25%; 
+}
+
+.Center {
+  width: 50%;
+}
+
+.Center > div {
+  position: relative;
+  top: -100px;
+}
+
+.rightSide {
+  position: relative;
+  top: 30px;
+  width: 25%;
 }

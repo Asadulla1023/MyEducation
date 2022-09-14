@@ -107,4 +107,5 @@ a:active {
   min-width: 170px;
   height: 50px;
   padding: 5px 15px;
+  cursor: pointer;
 }

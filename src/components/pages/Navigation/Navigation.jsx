@@ -35,7 +35,7 @@ const Navigation = () => {
   return (
     <div className={nav ? styles.navbarContentActive : styles.navbarContent}>
       <ul className={styles.navbarUl}>
-        <li className={styles.navbarLi}><Link className={styles.navigators} to="/"><img src="https://www.freeiconspng.com/thumbs/education-png/education-png-10.png" width="140px" alt="" className={styles.logoImg} /><p>My Education</p></Link></li>
+        <li className={styles.navbarLi}><Link className={styles.navigators} to="/"><img src="https://www.freeiconspng.com/thumbs/education-png/education-png-10.png" width="140px" alt="" className={styles.logoImg} /><p>My — Education</p></Link></li>
         <li><Link className={styles.navigators} to="/">Home</Link></li>
         <li><Link className={styles.navigators} to="/about">About Education</Link></li>
         <li><Link className={styles.navigators} to="/main">About Teachers</Link></li>

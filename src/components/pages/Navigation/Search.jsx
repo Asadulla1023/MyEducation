@@ -18,6 +18,7 @@ export function Search({ setOpenModal, setRotate }) {
             alert("Please fill in the blanks")
         }
         else {
+            alert("Saved")
             localStorage.setItem("region: " + region, "proff: " + prof)
         }
     }

@@ -1,0 +1,61 @@
+.card {
+  width: 100%;
+  padding: 10px;
+  height: 150px;
+  gap: 10px;
+  background: rgb(114, 255, 229);
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.card:last-child {
+  margin-bottom: 0px;
+}
+
+.adds {
+  gap: 10px;
+}
+
+.top > h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.top > p {
+  font-style: italic;
+  color: rgb(89, 0, 255);
+}
+
+.leftside {
+  padding: 10px;
+  background: cornflowerblue;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 12px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutSection {
+  color: #fff;
+  margin-top: 15px;
+}
+
+.aboutSection > button {
+  width: 250px;
+  height: 40px;
+  margin: 10px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  top: 0px;
+}

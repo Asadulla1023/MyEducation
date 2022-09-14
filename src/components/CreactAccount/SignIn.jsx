@@ -9,6 +9,11 @@ export const SignIn = ({ setSignIn, nameUser }) => {
 
   const passRef = useRef("")
 
+  const bgChanger = () => {
+    document.body.style.overflow = "hidden"
+    console.log(bgChanger())
+  }
+
   const clearInputHandler = () => {
     passRef.current.value = ""
     nameRef.current.value = ""
@@ -26,8 +31,10 @@ export const SignIn = ({ setSignIn, nameUser }) => {
       nameUser = nameRef.current.value
       clearInputHandler()
       setSignIn(false)
+      document.body.style.overflow = "hidden"
     }
   }
+
 
   return (
     <div className="hh">

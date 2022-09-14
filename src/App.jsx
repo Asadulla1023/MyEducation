@@ -12,9 +12,10 @@ import About from './components/pages/AboutPage/About';
 import Navigation from './components/pages/Navigation/Navigation';
 
 
+
 import './styles/global.css'
 import { AccAndSign } from './components/CreactAccount/AccAndSign';
-import { SignIn } from './components/CreactAccount/SignIn';
+import { LeftSide, RightSide } from './components/LeftSide';
 
 function App() {
 
@@ -25,16 +26,24 @@ function App() {
           <Navigation />
           <div className="sectionSignIn">
             <div className="account">
-              <AccAndSign/>
+              <AccAndSign />
             </div>
             <div className="routers">
-              <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/about' element={<About />} />
-                <Route path='/main' element={<Main />} />
-                <Route path='/contact' element={<Contact />} />
-                <Route path='*' element={<Home />} />
-              </Routes>
+              <div className="leftSide">
+                  <LeftSide />
+              </div>
+              <div className="Center">
+                <Routes>
+                  <Route path='/' element={<Home />} />
+                  <Route path='/about' element={<About />} />
+                  <Route path='/main' element={<Main />} />
+                  <Route path='/contact' element={<Contact />} />
+                  <Route path='*' element={<Home />} />
+                </Routes>
+              </div>
+              <div className="rightSide">
+                <RightSide/>
+              </div>
             </div>
           </div>
         </div>
