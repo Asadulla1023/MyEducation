@@ -29,9 +29,9 @@ export const SignIn = ({ setSignIn, nameUser }) => {
     else {
       localStorage.setItem(name, `pass: ${pass}`)
       nameUser = nameRef.current.value
+      document.body.style.overflow = "auto"
       clearInputHandler()
       setSignIn(false)
-      document.body.style.overflow = "hidden"
     }
   }
 

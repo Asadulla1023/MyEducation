@@ -6,9 +6,17 @@
   transition: 2s linear;
 }
 
+.signIn > button {
+  background: #ef9273;
+}
+
+.signIn > button:hover {
+  background: #efbf73;
+  color: #000;
+}
+
 .modalBackground {
-    z-index: 1000;
-  animation: bounce;
+  z-index: 1;
   animation-duration: 2s;
   width: 100vw;
   height: 100vh;
@@ -23,7 +31,7 @@
 }
 
 .modalContainer {
-    z-index: 1000;
+  z-index: 1000;
   width: 500px;
   height: 500px;
   border-radius: 12px;
@@ -91,7 +99,7 @@
   height: 45px;
   margin: 10px;
   border: none;
-  background-color: cornflowerblue;
+  background-color: #ef9273;
   color: white;
   border-radius: 8px;
   font-size: 20px;

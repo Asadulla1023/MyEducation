@@ -3,7 +3,7 @@
   padding: 10px;
   height: 150px;
   gap: 10px;
-  background: rgb(114, 255, 229);
+  background: #ffd900;
   border-radius: 12px;
   margin-bottom: 40px;
   transition: 0.1s linear;
@@ -24,19 +24,19 @@
 }
 
 .top > h3 {
-  color: #fff;
+  color: #0d0d0d;
   font-size: 20px;
   font-weight: 700;
 }
 
 .top > p {
   font-style: italic;
-  color: rgb(89, 0, 255);
+  color: #0d0d0d;
 }
 
 .leftside {
   padding: 10px;
-  background: cornflowerblue;
+  background: #ef9273;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 12px;
 }
@@ -48,21 +48,24 @@
 }
 
 .aboutSection {
-  color: #fff;
+  color: #0d0d0d;
   margin-top: 15px;
 }
 
 .aboutSection > button {
-  width: 250px;
+  width: 150px;
   height: 40px;
   margin: 10px;
   border: none;
-  background-color: cornflowerblue;
-  color: white;
+  background-color: #efbf73;
+  color: #0d0d0d;
   border-radius: 8px;
   font-size: 20px;
   font-weight: 700;
   cursor: pointer;
-  position: relative;
-  top: 0px;
+}
+
+.aboutSection > button:hover {
+  color: #000;
+  background: #ffd900;
 }

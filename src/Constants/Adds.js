@@ -7,7 +7,7 @@ export const ADDS = [
         id: 1
     },
     {
-        proff: "Frontend",
+        proff: "Flutter",
         loc: "Sirdaryo",
         educ: "BA",
         about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, sapiente.",
@@ -35,7 +35,7 @@ export const ADDS = [
         id:5
     },
     {
-        proff: "Frontend",
+        proff: "React",
         loc: "Farg'ona",
         educ: "BA",
         about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, sapiente.",
