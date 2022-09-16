@@ -1,13 +1,10 @@
-import { useRef } from 'react';
+import { useRef } from "react";
 
-import './signIn.css'
+import "./signIn.css";
 
-export const SignIn = ({ setSignIn, nameUser }) => {
-
-
+export const SignIn = ({ setSignIn, setIsAuth }) => {
+  const nameRef = useRef(null);
   const passRef = useRef(null);
-
-  const nameRef = useRef(null)
 
   const clearInputHandler = () => {
     passRef.current.value = "";
@@ -24,11 +21,10 @@ export const SignIn = ({ setSignIn, nameUser }) => {
       localStorage.setItem("password", pass);
       clearInputHandler();
       setSignIn(false);
+      setIsAuth(true);
       document.body.style.overflow = "hidden";
     }
   };
-
-
 
   return (
     <div className="hh">
@@ -40,16 +36,32 @@ export const SignIn = ({ setSignIn, nameUser }) => {
           <form action="/" className="body">
             <div className="asking">
               <p className="about">Your name</p>
-              <input type="text" ref={nameRef} placeholder="Your name" required />
+              <input
+                type="text"
+                ref={nameRef}
+                placeholder="Your name"
+                required
+              />
               <p className="about">Your password</p>
-              <input type="password" minLength="4" ref={passRef} placeholder="Your password" required />
-              <button onClick={() => {
-                addUser()
-              }} type="button">Add account</button>
+              <input
+                type="password"
+                minLength="4"
+                ref={passRef}
+                placeholder="Your password"
+                required
+              />
+              <button
+                onClick={() => {
+                  addUser();
+                }}
+                type="button"
+              >
+                Add account
+              </button>
             </div>
           </form>
         </div>
       </div>
     </div>
   );
-}
+};
