@@ -1,0 +1,87 @@
+.AdsFoot {
+  overflow-x: scroll;
+  margin-top: 100px;
+}
+
+.AdsWrapper {
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Adscard {
+  width: 350px;
+  padding: 10px;
+  height: 150px;
+  gap: 10px;
+  background: #ffd900;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  transition: 0.1s linear;
+}
+
+.Adscard:hover {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.adds {
+  gap: 10px;
+}
+
+marquee {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top > h3 {
+  color: #0d0d0d;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.top > p {
+  font-style: italic;
+  color: #0d0d0d;
+}
+
+.leftside {
+  padding: 10px;
+  background: #ef9273;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 12px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutSection {
+    width: 350px;
+  color: #0d0d0d;
+  margin-top: 15px;
+}
+
+.aboutSection > button {
+  width: 150px;
+  height: 40px;
+  margin: 10px;
+  border: none;
+  background-color: #efbf73;
+  color: #0d0d0d;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.aboutSection > button:hover {
+  color: #000;
+  background: #ffd900;
+}

@@ -11,7 +11,6 @@ export const AccAndSign = () => {
 
     const signInOpener = () => {
         setSignIn(true)
-        // document.body.children[1].firstChild.st
         document.body.style.overflow = "hidden"
     }
     return (

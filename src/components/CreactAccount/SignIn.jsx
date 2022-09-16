@@ -4,32 +4,30 @@ import './signIn.css'
 
 export const SignIn = ({ setSignIn, nameUser }) => {
 
-  const nameRef = useRef("")
 
+  const passRef = useRef(null);
 
-  const passRef = useRef("")
-
+  const nameRef = useRef(null)
 
   const clearInputHandler = () => {
-    passRef.current.value = ""
-    nameRef.current.value = ""
-  }
-
+    passRef.current.value = "";
+    nameRef.current.value = "";
+  };
 
   const addUser = () => {
-    const name = nameRef.current.value
-    const pass = passRef.current.value
-    if (name === "" || pass === "") {
+    const username = nameRef.current.value;
+    const pass = passRef.current.value;
+    if (username.trim() === "" && pass.trim() === "") {
       alert("Please fill in the blanks");
+    } else {
+      localStorage.setItem("username", username);
+      localStorage.setItem("password", pass);
+      clearInputHandler();
+      setSignIn(false);
+      document.body.style.overflow = "hidden";
     }
-    else {
-      localStorage.setItem(name, `pass: ${pass}`)
-      nameUser = nameRef.current.value
-      document.body.style.overflow = "auto"
-      clearInputHandler()
-      setSignIn(false)
-    }
-  }
+  };
+
 
 
   return (

@@ -20,31 +20,22 @@ export function Search({ setOpenModal, setRotate }) {
             profRef.current.value = ""
         }
 
-        // if (region === "" || prof === "") {
-        //     console.log(prof, region)
-        //     clearInputs()
+        // ADDS.forEach(e => {
+        //     if (e.loc !== region || e.proff !== prof) {
+        //         console.log(e)
+        //         clearInputs()
+        //     }
+        //     else {
+        //         alert("Saved")
+        //         localStorage.setItem("region: " + region, "proff: " + prof)
+        //         setOpenModal(false);
+        //         setRotate(false)
+        //     }
+        // })
 
-        // }
-        // else {
-        //     console.log(ADDS.proff)
-        //     alert("Saved")
-        //     localStorage.setItem("region: " + region, "proff: " + prof)
-        //     setOpenModal(false);
-        //     setRotate(false)
-        // }
-
-        ADDS.forEach(e => {
-            if (e.loc !== region || e.proff !== prof) {
-                console.log("Soryy we don't have like this educations in regions")
-                clearInputs()
-            }
-            else {
-                alert("Saved")
-                localStorage.setItem("region: " + region, "proff: " + prof)
-                setOpenModal(false);
-                setRotate(false)
-            }
-        })
+        // ADDS.filter(
+            
+        // )
     }
 
 
