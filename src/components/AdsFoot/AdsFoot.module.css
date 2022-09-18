@@ -68,7 +68,14 @@ marquee {
   margin-top: 15px;
 }
 
+.aboutSection > p {
+  text-align: left;
+}
+
 .aboutSection > button {
+  position: relative;
+  left: -100px;
+  align-self: start;
   width: 150px;
   height: 40px;
   margin: 10px;
@@ -84,4 +91,12 @@ marquee {
 .aboutSection > button:hover {
   color: #000;
   background: #ffd900;
+}
+
+.slider-wrapper {
+  padding-left: 20px;
+}
+
+.AdCarousel {
+  margin-top: 100px;
 }

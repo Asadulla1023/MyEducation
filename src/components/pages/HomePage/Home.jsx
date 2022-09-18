@@ -45,6 +45,9 @@ const Home = () => {
           </div>
         ))}
       </div>
+      <div className={styles.learnMore}>
+          <h3><Link to="/about">See more!!!</Link></h3>
+      </div>
     </div>
   )
 }

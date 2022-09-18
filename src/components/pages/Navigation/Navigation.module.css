@@ -90,8 +90,12 @@ a:active {
   border-radius: 100px;
 }
 
-.navigators {
+.navigators:first-child {
   font-size: 22px;
+}
+
+.navigators {
+  font-size: 18px;
 }
 
 .regionSelector > button {

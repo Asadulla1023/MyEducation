@@ -7,7 +7,7 @@ import "./Search.css";
 // import close from './close.png'
 
 export function Search({ setOpenModal, setRotate }) {
-
+    console.log(ADDS)
     const regionRef = useRef("");
     const profRef = useRef("");
 
@@ -20,21 +20,30 @@ export function Search({ setOpenModal, setRotate }) {
             profRef.current.value = ""
         }
 
-        // ADDS.forEach(e => {
-        //     if (e.loc !== region || e.proff !== prof) {
-        //         console.log(e)
-        //         clearInputs()
-        //     }
-        //     else {
-        //         alert("Saved")
-        //         localStorage.setItem("region: " + region, "proff: " + prof)
-        //         setOpenModal(false);
-        //         setRotate(false)
-        //     }
-        // })
+        ADDS.forEach(e => {
+            if (e.loc !== region || e.proff !== prof) {
+                console.log(e)
+                clearInputs()
+            }
+            else {
+                alert("Saved")
+                localStorage.setItem("region", region)
+                localStorage.setItem("proff", prof)
+                setOpenModal(false);
+                setRotate(false)
+            }
+        })
 
         // ADDS.filter(
-            
+        //     loc => {
+        //         if (loc === ADDS.loc) {
+        //             console.log('hi')
+        //             clearInputs()
+        //         }
+        //         else {
+        //             console.log("no")
+        //         }
+        //     }
         // )
     }
 
@@ -60,9 +69,9 @@ export function Search({ setOpenModal, setRotate }) {
                     </div>
                     <form action="/" className="body">
                         <div className="asking">
-                            <p className="about">Your region</p>
+                            <p className="about">Type region</p>
                             <input type="text" ref={regionRef} placeholder="example: Tashkent" required />
-                            <p className="about">Your profession</p>
+                            <p className="about">Type your profession</p>
                             <input type="text" ref={profRef} placeholder="example: IT" required />
                             <button onClick={addRegion} type="button">Continue</button>
                         </div>

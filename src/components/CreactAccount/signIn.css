@@ -45,7 +45,7 @@
 .modalContainer .title {
   display: inline-block;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .titleCloseBtn {
@@ -72,6 +72,8 @@
 }
 
 .asking {
+  position: relative;
+  top: 20px;
   flex-direction: column;
 }
 
@@ -122,4 +124,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+
+.hidden {
+  opacity: 0.2;
+}
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile > img {
+  position: relative;
+  top: 8px;
+}
+
+.aboutUser {
+  position: relative;
+  left: 20px;
+}
+
+.aboutUser > h3 {
+  margin-top: 10px;
+}
+
+.aboutUser > h3:last-child {
+  margin-bottom: 0;
 }

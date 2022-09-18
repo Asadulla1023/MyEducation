@@ -2,9 +2,10 @@ import { useRef } from "react";
 
 import "./signIn.css";
 
-export const SignIn = ({ setSignIn, setIsAuth }) => {
+export const SignIn = ({ setSignIn, setIsAuth, setBtnValue }) => {
   const nameRef = useRef(null);
   const passRef = useRef(null);
+  const locationRef = useRef(null)
 
   const clearInputHandler = () => {
     passRef.current.value = "";
@@ -14,15 +15,17 @@ export const SignIn = ({ setSignIn, setIsAuth }) => {
   const addUser = () => {
     const username = nameRef.current.value;
     const pass = passRef.current.value;
-    if (username.trim() === "" && pass.trim() === "") {
+    const location = locationRef.current.value
+    if (username.trim() === "" && pass.trim() === "" && location.trim() === "") {
       alert("Please fill in the blanks");
     } else {
       localStorage.setItem("username", username);
       localStorage.setItem("password", pass);
+      localStorage.setItem("location", location)
       clearInputHandler();
       setSignIn(false);
       setIsAuth(true);
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = "auto";
     }
   };
 
@@ -31,7 +34,7 @@ export const SignIn = ({ setSignIn, setIsAuth }) => {
       <div className="modalBackground">
         <div className="modalContainer">
           <div className="title">
-            <h1>Your Name and Password</h1>
+            <h1>Who are you?</h1>
           </div>
           <form action="/" className="body">
             <div className="asking">
@@ -50,6 +53,8 @@ export const SignIn = ({ setSignIn, setIsAuth }) => {
                 placeholder="Your password"
                 required
               />
+              <p className="about">Your region</p>
+              <input type="text" ref={locationRef} placeholder="Where are you from"/>
               <button
                 onClick={() => {
                   addUser();

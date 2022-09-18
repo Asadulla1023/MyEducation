@@ -53,4 +53,13 @@ export const ADDS = [
     id: 6,
     top: 6,
   },
+  {
+    proff: "Web",
+    loc: "Andijon",
+    educ: "WebDevs",
+    about:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, sapiente.",
+    id: 7,
+    top: 7,
+  },
 ];

@@ -16,8 +16,9 @@ import Navigation from './components/pages/Navigation/Navigation';
 import './styles/global.css'
 import { AccAndSign } from './components/CreactAccount/AccAndSign';
 import { LeftSide, RightSide } from './components/LeftSide';
-import { AdsFoot } from './components';
+
 import { Carousel } from './components'
+import { Footer } from './components/Footer/Footer';
 
 function App() {
 
@@ -47,8 +48,8 @@ function App() {
                 <RightSide/>
               </div>
             </div>
-          <AdsFoot/>
           <Carousel/>
+          <Footer/>
           </div>
         </div>
       </div>
