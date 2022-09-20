@@ -6,8 +6,9 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: #f8d6d0;
+  background: #DDDBF1;
 }
+
 
 
 .App {
@@ -40,7 +41,6 @@ body {
   height: 45px;
   margin: 10px;
   border: none;
-  background-color: cornflowerblue;
   color: white;
   border-radius: 8px;
   font-size: 20px;

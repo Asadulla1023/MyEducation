@@ -23,7 +23,7 @@
   align-items: center;
   width: 100%;
   height: 120px;
-  background: #ef9273;
+  background: #3C4F76;
 }
 
 .navbarContentActive > ul {
@@ -37,8 +37,12 @@
   color: #fff;
 }
 
+.navbarContentActive > ul > li > a:hover {
+  color: #C0FDFB;
+}
+
 .navbarContent > ul > li > a:hover {
-  color: rgb(255, 136, 0);
+  color: #252e2d;
 }
 
 .navbarLi > a {
@@ -68,18 +72,18 @@ ul {
 }
 
 a {
-  color: #000;
+  color: #5D737E;
   font-weight: 600;
   transition: 0.2s ease-in-out;
   text-decoration: none;
 }
 
 .navbarContent > ul > a:hover {
-  color: #f59652;
+  color: #64B6AC;
 }
 
 a:active {
-  color: #0d0d0d;
+  color: #5D737E;
   opacity: 0.3;
 }
 
@@ -99,10 +103,10 @@ a:active {
 }
 
 .regionSelector > button {
-  color: #fff;
+  color: #C0FDFB;
   border-radius: 14px;
   border: none;
-  background: #ef9273;
+  background: #5D737E;
   font-weight: 600;
   display: flex;
   justify-content: center;
@@ -124,6 +128,6 @@ button {
 }
 
 button:hover {
-  color: rgb(255, 136, 0);
-  background: #fff;
+  color: #5D737E;
+  background: #C0FDFB;
 }

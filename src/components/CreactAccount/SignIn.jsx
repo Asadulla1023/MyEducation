@@ -16,9 +16,13 @@ export const SignIn = ({ setSignIn, setIsAuth, setBtnValue }) => {
     const username = nameRef.current.value;
     const pass = passRef.current.value;
     const location = locationRef.current.value
-    if (username.trim() === "" && pass.trim() === "" && location.trim() === "") {
+    if (username.trim() === "" || pass.trim() === "" || location.trim() === "") {
       alert("Please fill in the blanks");
-    } else {
+    }
+    if (username.length >= 15 || pass.length >= 8 || location.length >= 18 ) {
+      alert("User not found")
+    } 
+    else {
       localStorage.setItem("username", username);
       localStorage.setItem("password", pass);
       localStorage.setItem("location", location)

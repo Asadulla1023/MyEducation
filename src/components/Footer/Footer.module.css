@@ -2,7 +2,7 @@
   position: relative;
   left: -50px;
   width: 110%;
-  background: #ef9273;
+  background: #3C4F76;
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
 }
@@ -23,7 +23,21 @@
 .logo > a > h2 {
   font-style: italic;
   position: relative;
+  color: #fff;
   left: -10px;
+  transition: 0.2s linear;
+}
+
+.logo > a > h2:hover {
+  color: #C0FDFB;
+}
+
+.centerSideFooter > ul> li > a {
+  color: #fff;
+}
+
+.centerSideFooter > ul > li > a:hover {
+  color: #C0FDFB;
 }
 
 .logo > a:hover {
@@ -43,10 +57,6 @@
   width: 100%;
 }
 
-.centerSideFooter > ul > li > a:hover {
-  color: #fff;
-}
-
 .rightSideFooter {
   position: relative;
   left: -25px;
@@ -64,17 +74,10 @@
   border-radius: 500px;
 }
 
-.facebook > img:hover {
-  background: #365491;
-}
-
 .instagram > img {
   transition: 0.2s linear;
+  background: transparent;
   border-radius: 500px;
-}
-
-.instagram > img:hover {
-  background: #f26303;
 }
 
 .linkedin > img {
@@ -82,20 +85,13 @@
   border-radius: 500px;
 }
 
-.linkedin > img:hover {
-  background: #4979d8;
-}
-
 .telegram > img {
   transition: 0.2s linear;
   border-radius: 500px;
 }
 
-.telegram > img:hover {
-  background: #3d75e4;
-}
-
 .rightSideFooter > h3 {
   text-align: center;
   margin-bottom: 20px;
+  color: #fff;
 }

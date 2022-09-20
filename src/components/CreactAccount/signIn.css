@@ -7,12 +7,14 @@
 }
 
 .signIn > button {
-  background: #ef9273;
+  background: #5D737E;
+  color: #C0FDFB;
+  font-weight: 600;
 }
 
 .signIn > button:hover {
-  background: #efbf73;
-  color: #000;
+  background: #C0FDFB;
+  color: #5D737E;
 }
 
 .modalBackground {
@@ -147,6 +149,7 @@
 }
 
 .aboutUser > h3 {
+  color: #5D737E;
   margin-top: 10px;
 }
 

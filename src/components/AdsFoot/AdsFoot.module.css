@@ -15,7 +15,8 @@
   padding: 10px;
   height: 150px;
   gap: 10px;
-  background: #ffd900;
+  margin: 15px;
+  background: #D1BEB0;
   border-radius: 12px;
   margin-bottom: 40px;
   transition: 0.1s linear;
@@ -80,8 +81,8 @@ marquee {
   height: 40px;
   margin: 10px;
   border: none;
-  background-color: #efbf73;
-  color: #0d0d0d;
+  background-color: #5D737E;
+  color: #C0FDFB;
   border-radius: 8px;
   font-size: 20px;
   font-weight: 700;
@@ -89,8 +90,8 @@ marquee {
 }
 
 .aboutSection > button:hover {
-  color: #000;
-  background: #ffd900;
+  color: #5D737E;
+  background: #C0FDFB;
 }
 
 .slider-wrapper {
