@@ -2,7 +2,7 @@ import { useRef } from "react";
 
 import "./signIn.css";
 
-export const SignIn = ({ setSignIn, setIsAuth, setBtnValue }) => {
+export const SignIn = ({ setSignIn, setIsAuth }) => {
   const nameRef = useRef(null);
   const passRef = useRef(null);
   const locationRef = useRef(null)
@@ -19,9 +19,9 @@ export const SignIn = ({ setSignIn, setIsAuth, setBtnValue }) => {
     if (username.trim() === "" || pass.trim() === "" || location.trim() === "") {
       alert("Please fill in the blanks");
     }
-    if (username.length >= 15 || pass.length >= 8 || location.length >= 18 ) {
-      alert("User not found")
-    } 
+    // if (username.length >= 15 || pass.length >= 8 || location.length >= 18 ) {
+    //   alert("User not found")
+    // } 
     else {
       localStorage.setItem("username", username);
       localStorage.setItem("password", pass);
