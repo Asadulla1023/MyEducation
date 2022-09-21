@@ -11,7 +11,7 @@ import { ADDS } from '../../Constants/Adds';
 export const Carousel = () => {
     return (
         <div className={styles.AdCarousel}>
-            <ReactCarousel showArrows={true} showThumbs={true} centerSlidePercentage={33.33} centerMode width="100%" autoPlay={true} interval={2000} infiniteLoop>
+            <ReactCarousel showArrows={true} showThumbs={false} centerSlidePercentage={33.33} centerMode width="100%" autoPlay={true} interval={2000} infiniteLoop>
                 {ADDS.map(({ proff, loc, id, about, educ }) => (
                     <div className={styles.Adscard} key={id}>
                         <div className={styles.cont}>
